@@ -1,17 +1,15 @@
 # 🎵 K-Pop Trivia Bot
 
-K-Pop Trivia Bot adalah chatbot interaktif berbasis **Streamlit** dan **Google Gemini API**.  
-Bot ini dibuat untuk memberikan kuis seru seputar dunia K-Pop dan menampilkan skor secara real-time.  
-Cocok untuk penggemar K-Pop yang ingin menguji pengetahuan mereka dengan cara yang fun!
-
+Belajar K-Pop sambil seru-seruan trivia dengan EduKPop Bot! 💜✨
+Aplikasi ini dibangun menggunakan Streamlit dan Gemini API untuk memberikan pertanyaan trivia, evaluasi jawaban, dan fun facts seputar dunia K-Pop.
 ---
 
 ## 🚀 Fitur
-- Kuis trivia tentang K-Pop (acak setiap pertanyaan)
-- Skor ditampilkan di sidebar
-- Respon AI yang interaktif menggunakan **Gemini API**
-- Dibangun dengan **Streamlit** → simple UI berbasis web
-
+- Pertanyaan trivia K-Pop interaktif 🎶
+- Evaluasi jawaban otomatis ([CORRECT] ✅ atau [WRONG] ❌)
+- Skor & jumlah pertanyaan ditampilkan di sidebar 📈
+- Penjelasan edukatif + fun facts K-Pop 💡
+- Kosakata bahasa Korea sederhana ✍️
 ---
 
 ## 🛠️ Teknologi
@@ -38,11 +36,25 @@ Cocok untuk penggemar K-Pop yang ingin menguji pengetahuan mereka dengan cara ya
    ```bash
    pip install -r requirements.txt
 
-4. **Tambahkan API Key Gemini di file .streamlit/secrets.toml:**:
+4. **Buat folder .streamlit/ di root project lalu tambahkan file secrets.toml**:
    ```bash
-   GEMINI_API_KEY = "masukkan_api_key_kamu"
+   [general]
+   GEMINI_API_KEY = "your_api_key_here"
+
 
 **Menjalankan Aplikasi**:
 ```bash
 streamlit run kpop_trivia_bot.py
+```
+
+🌐 Deploy ke Streamlit Cloud
+1. Push project ini ke GitHub.
+2. Masuk ke Streamlit Cloud → New App → pilih repo kamu.
+3. Tambahkan Secrets melalui menu:
+   Buka App → Settings → Secrets
+   Tambahkan:
+    ```bash
+    GEMINI_API_KEY="your_api_key_here"
+    ```
+4. Klik Deploy → aplikasi siap digunakan! 🎉
 
