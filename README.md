@@ -29,16 +29,20 @@ Cocok untuk penggemar K-Pop yang ingin menguji pengetahuan mereka dengan cara ya
    cd kpop-trivia-bot
 
 2. **Buat Virtual Environment**:
-python -m venv .venv
-source .venv/bin/activate   # Mac/Linux
-.venv\Scripts\activate      # Windows
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate   # Mac/Linux
+   .venv\Scripts\activate      # Windows
 
 3. **Install dependencies**:
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 4. **Tambahkan API Key Gemini di file .streamlit/secrets.toml:**:
-GEMINI_API_KEY = "masukkan_api_key_kamu"
+   ```bash
+   GEMINI_API_KEY = "masukkan_api_key_kamu"
 
 **Menjalankan Aplikasi**:
+```bash
 streamlit run kpop_trivia_bot.py
 
